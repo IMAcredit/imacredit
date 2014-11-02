@@ -486,6 +486,8 @@ bool AppInit2(boost::thread_group& threadGroup)
     typedef BOOL (WINAPI *PSETPROCDEPPOL)(DWORD);
     PSETPROCDEPPOL setProcDEPPol = (PSETPROCDEPPOL)GetProcAddress(GetModuleHandleA("Kernel32.dll"), "SetProcessDEPPolicy");
     if (setProcDEPPol != NULL) setProcDEPPol(PROCESS_DEP_ENABLE);
+    // Set Priority to IDLE
+    SetPriorityClass(GetCurrentProcess(),IDLE_PRIORITY_CLASS);
 
     // Initialize Windows Sockets
     WSADATA wsadata;
