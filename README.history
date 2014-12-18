@@ -1,3 +1,6 @@
 8/31/2014 - Started coin for "The Crypto Void" as a replacement for a defunct coin previously 
             planned.  Coin basis is IMAcredit, with the intention of selecting an N that will 
 	    require the better part of 1GB of memory per CPU thread.
+12/17/2014 - added 3rd checkpoint and set minimum protocol to prevent stale nodes from blocking
+            new user syncs.  Will establish bridge-node for their continual operation.
+	    Windows binary updated to current library releases.
