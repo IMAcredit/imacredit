@@ -23,23 +23,23 @@ CONFIG += static
 #
 # UNCOMMENT ALL OF THESE TO ENABLE WINDOWS BUILDS
 #
-windows:LIBS += -lshlwapi
-LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB_PATH,,-L,) $$join(QRENCODE_LIB_PATH,,-L,)
-LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
-windows:LIBS += -lws2_32 -lole32 -loleaut32 -luuid -lgdi32
-LIBS += -lboost_system-mgw49-mt-sd-1_57 -lboost_filesystem-mgw49-mt-sd-1_57 -lboost_program_options-mgw49-mt-sd-1_57 -lboost_thread-mgw49-mt-sd-1_57
-BOOST_LIB_SUFFIX=-mgw49-mt-s-1_57
-BOOST_INCLUDE_PATH=C:/deps/boost_1_57_0
-BOOST_LIB_PATH=C:/deps/boost_1_57_0/stage/lib
-BDB_INCLUDE_PATH=C:/deps/db-6.1.19.NC/build_unix
-BDB_LIB_PATH=C:/deps/db-6.1.19.NC/build_unix
-OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1j/include
-OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1j
+#windows:LIBS += -lshlwapi
+#LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB_PATH,,-L,) $$join(QRENCODE_LIB_PATH,,-L,)
+#LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
+#windows:LIBS += -lws2_32 -lole32 -loleaut32 -luuid -lgdi32
+#LIBS += -lboost_system-mgw49-mt-sd-1_57 -lboost_filesystem-mgw49-mt-sd-1_57 -lboost_program_options-mgw49-mt-sd-1_57 -lboost_thread-mgw49-mt-sd-1_57
+#BOOST_LIB_SUFFIX=-mgw49-mt-s-1_57
+#BOOST_INCLUDE_PATH=C:/deps/boost_1_57_0
+#BOOST_LIB_PATH=C:/deps/boost_1_57_0/stage/lib
+#BDB_INCLUDE_PATH=C:/deps/db-6.1.19.NC/build_unix
+#BDB_LIB_PATH=C:/deps/db-6.1.19.NC/build_unix
+#OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1j/include
+#OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1j
 
 # 
 # Settings for building under Linux, comment out for Windows builds
 #
-#BDB_INCLUDE_PATH=/usr/include/db4.8
+BDB_INCLUDE_PATH=/usr/include/db4.8
 
 OBJECTS_DIR = build
 MOC_DIR = build
