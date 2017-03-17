@@ -158,7 +158,7 @@ TransactionView::TransactionView(QWidget *parent) :
     connect(copyTxIDAction, SIGNAL(triggered()), this, SLOT(copyTxID()));
     connect(editLabelAction, SIGNAL(triggered()), this, SLOT(editLabel()));
     connect(showDetailsAction, SIGNAL(triggered()), this, SLOT(showDetails()));
-    connect(viewOnImacExplorerAction, SIGNAL(triggered()), this, SLOT(viewOnVertExplorer()));
+    connect(viewOnImacExplorerAction, SIGNAL(triggered()), this, SLOT(viewOnImacExplorer()));
 }
 
 void TransactionView::setModel(WalletModel *model)
